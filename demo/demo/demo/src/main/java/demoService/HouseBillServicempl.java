@@ -10,12 +10,12 @@ public class HouseBillServicempl implements HouseBillService{
     }
 
     @Override
-    public Mono<HouseBill> updateHouseBill() {
+    public Mono<HouseBill> updateHouseBill(String billId) {
         return null;
     }
 
     @Override
-    public Boolean deleteHouseBill() {
+    public Boolean deleteHouseBill(String billId) {
         return null;
     }
 }

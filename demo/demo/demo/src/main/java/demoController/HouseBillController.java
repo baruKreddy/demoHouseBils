@@ -20,5 +20,13 @@ public class HouseBillController {
     public Mono<HouseBill> getHouseBill(@PathVariable String billId){
         return houseBillServicempl.getHouseBill(billId);
     }
-    
+
+    @GetMapping("/updateByHouseBillId/{BillId}")
+    public Mono<HouseBill> updateHouseBill(@PathVariable String billId){
+        return houseBillServicempl.updateHouseBill(billId);
+    }
+    @GetMapping("/updateByHouseBillId/{BillId}")
+    public Boolean deleteHouseBill(@PathVariable String billId){
+        return houseBillServicempl.deleteHouseBill(billId);
+    }
 }
